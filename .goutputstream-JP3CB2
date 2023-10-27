@@ -1,0 +1,47 @@
+//Modify above assignment - 32 to hold record of five books.  Display the records of all the books using a function. 
+
+#include<stdio.h>
+
+void display(struct book b1[])
+{
+
+
+    for(int i = 0; i<5;i++)
+    {
+    printf("printting details\n");
+    scanf("%d%s%f" , b1[i].bookId , b1[i].title , b1[i].price);
+    } 
+}
+
+
+struct Book{
+int bookId; 
+char title[50];
+float price;
+};
+
+
+
+int main(){
+
+typedef struct Book BOOK;
+BOOK b1[10];
+
+for(int i = 0; i<5;i++)
+{
+printf("Enter book details\n");
+scanf("%d%s%f" , &b1[i].bookId , &b1[i].title , &b1[i].price);
+}
+display(b1[]);
+
+
+
+//printf("%d  %s  %f \n" ,b1.bookId , b1.title , b1.price );
+//BOOK b2;
+//printf("Enter 2nd book details\n");
+//scanf("%d%s%f" , &b2.bookId , &b2.title , &b2.price);
+//printf("%d  %s  %f \n" ,b2.bookId , b2.title , b2.price );
+
+
+return 0 ;
+}

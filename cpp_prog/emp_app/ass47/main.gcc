@@ -1,0 +1,10 @@
+#include<iostream>
+#include"employee.h"
+
+int  main()
+{
+  employee e1;
+  e1.show();
+
+}
+
